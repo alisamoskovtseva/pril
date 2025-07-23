@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Блог | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#3498db">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Мой Блог</h1>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="about.html">Обо мне</a>
+                <a href="portfolio.html">Портфолио</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Мои работы</h2>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>проект Pygame судоку</h3>
+                <span class="tech">Python</span>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Телеграмм бот с использованием api NASA</h3>
+                <span class="tech">Python</span>
+            </div>
+        </div>
+
+        <section class="todo-section">
+            <h2>Мой список задач</h2>
+            <div class="todo-container">
+                <div class="todo-input">
+                    <input type="text" id="taskInput" placeholder="Добавить новую задачу...">
+                    <button id="addTaskBtn">Добавить</button>
+                </div>
+                <ul id="taskList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Мой Блог. Все права защищены.</p>
+        </div>
+    </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful');
+        })
+        .catch(err => {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+  }
+</script>
+</body>
+</html>
