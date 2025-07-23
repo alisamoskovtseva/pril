@@ -8,8 +8,8 @@ const urlsToCache = [
   '/portfolio.html',
   '/style.css',
   '/script.js',
-  '/images/hero-bg.jpg',
-  '/profile.jpg'
+  '/profile.jpg',
+  '/manifest.json'
 ];
 
 self.addEventListener('install', event => {
