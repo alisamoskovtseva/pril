@@ -5,7 +5,7 @@ const urlsToCache = [
   '.blog.html',
   '.contact.html',
   '.portfolio.html',
-  'pril/style.css',
+  '.style.css',
   '.script.js',
   '.profile.jpg',
   '.manifest.json',
