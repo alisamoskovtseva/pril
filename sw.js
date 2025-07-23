@@ -9,7 +9,8 @@ const urlsToCache = [
   'pril/style.css',
   'pril/script.js',
   'pril/profile.jpg',
-  'pril/manifest.json'
+  'pril/manifest.json',
+  'pril/images/1.png',
 ];
 
 self.addEventListener('install', event => {
