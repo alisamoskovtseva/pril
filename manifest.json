@@ -2,7 +2,7 @@
   "name": "Мой Блог",
   "short_name": "Блог",
   "description": "Персональный блог Алисы",
-  "start_url": "/",
+  "start_url": "/pril/",
   "display": "standalone",
   "background_color": "#2c3e50",
   "theme_color": "#3498db",
