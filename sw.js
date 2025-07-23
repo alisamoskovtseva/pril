@@ -1,16 +1,15 @@
 const CACHE_NAME = 'my-blog-cache-v1';
 const urlsToCache = [
-  '/',
-  'pril/index.html',
-  'pril/about.html',
-  'pril/blog.html',
-  'pril/contact.html',
-  'pril/portfolio.html',
+  '.index.html',
+  '.about.html',
+  '.blog.html',
+  '.contact.html',
+  '.portfolio.html',
   'pril/style.css',
-  'pril/script.js',
-  'pril/profile.jpg',
-  'pril/manifest.json',
-  'pril/icons/icon-512x512.png',
+  '.script.js',
+  '.profile.jpg',
+  '.manifest.json',
+  '.icons/icon-512x512.png',
 ];
 
 self.addEventListener('install', event => {
